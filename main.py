@@ -32,11 +32,11 @@ if __name__ == "__main__":
         prompt = str([arg + ' ' for arg in sys.argv[1:]])
         print('One-shot: \n\n', chat_with_gpt(prompt), '\n\n')
     else:
-        print('Entering Chat..\n')
+        print('Entering Chat..')
         while True:
             prompt = input('\nMe: ')
             if prompt.lower() in {'q', 'quit'}:
-                print("\nGoodbye!\n\n")
+                print("Goodbye!\n")
                 break
             try:
                 response = chat_with_gpt(prompt)
