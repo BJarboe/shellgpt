@@ -34,7 +34,7 @@ if __name__ == '__main__':
     sys_context()
     if len(sys.argv) > 1:
         prompt = ''.join([arg + ' ' for arg in sys.argv[1:]])
-        print('One-shot: \n\n', chat_with_gpt(prompt), '\n\n')
+        print('ChatGPT: \n', chat_with_gpt(prompt), '\n\n')
     else:
         print('Entering Chat..')
         while True:
