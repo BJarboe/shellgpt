@@ -44,6 +44,6 @@ if __name__ == '__main__':
                 break
             try:
                 response = chat_with_gpt(prompt)
-                print(f'GPT-4o: {response}')
+                print(f'\nGPT-4o: {response}')
             except Exception as e:
                 print(f'An error occurred: {e}')
